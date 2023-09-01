@@ -1,0 +1,10 @@
+.logo {
+
+  width: 92px;
+  height: auto;
+
+  & > * {
+    fill: var(--max);
+  }
+
+}

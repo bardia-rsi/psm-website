@@ -1,0 +1,33 @@
+@import "../../../styles/variables/screens";
+
+.wrapper {
+
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $screen-sm) {
+    max-width: $screen-sm;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: $screen-md;
+  }
+
+  @media only screen and (min-width: 864px) {
+    max-width: 864px;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    max-width: $screen-lg;
+  }
+
+
+  @media only screen and (min-width: $screen-xl) {
+    max-width: $screen-xl;
+  }
+
+  @media only screen and (min-width: $screen-2xl) {
+    max-width: $screen-2xl;
+  }
+
+}

@@ -1,0 +1,18 @@
+@import "../../../styles/variables/screens";
+
+.container {
+
+  width: 100%;
+  padding: 3rem 1rem;
+
+  @media only screen and (min-width: $screen-sm) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+}

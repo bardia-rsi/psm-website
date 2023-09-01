@@ -1,0 +1,11 @@
+.nav-item {
+
+  color: var(--tx-primary);
+  font-weight: 600;
+  text-transform: capitalize;
+
+  &:hover, &.active {
+    color: var(--ac-primary-500);
+  }
+
+}

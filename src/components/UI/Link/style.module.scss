@@ -1,0 +1,24 @@
+.link, .simple {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.link {
+
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: var(--deep-blue-600);
+  }
+
+}
+
+.simple {
+
+  color: var(--tx-secondary);
+
+  &:hover {
+    color: var(--ac-primary-500);
+  }
+
+}
