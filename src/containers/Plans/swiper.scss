@@ -1,0 +1,29 @@
+@import "../../styles/variables/screens";
+
+.swiper {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-top: 1.5rem;
+
+    .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+
+    .swiper-pagination {
+
+        position: static;
+
+        .swiper-pagination-bullet {
+            background: var(--bg-fifth);
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--ac-primary-500);
+        }
+
+    }
+
+}
