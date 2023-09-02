@@ -1,0 +1,43 @@
+@import "../../../../styles/variables/screens";
+
+.tab {
+
+  flex: 1 1 0;
+  color: var(--tx-tertiary);
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--ac-primary-500);
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+.active {
+  color: var(--ac-primary-500);
+}
+
+.underline {
+
+  height: 0.125rem;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background: var(--ac-primary-500);
+  margin: 0 0.5rem;
+
+  @media only screen and (min-width: $screen-md) {
+    margin: 0 1rem;
+  }
+
+}

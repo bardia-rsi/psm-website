@@ -1,0 +1,10 @@
+@import "../../../../styles/variables/borders";
+
+.list {
+    max-width: 42rem;
+    display: flex;
+    justify-content: stretch;
+    padding: 0.25rem;
+    margin: 0 auto;
+    border-radius: $border-rounded-xl;
+}

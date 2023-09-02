@@ -1,0 +1,85 @@
+<svg width="570" height="418" viewBox="0 0 570 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M103.002 209.448C103.002 94.2971 196.35 0.948486 311.502 0.948486H521.002C547.512 0.948486 569.002 22.4388 569.002 48.9485V369.948C569.002 396.458 547.511 417.948 521.002 417.948H311.502C196.35 417.948 103.002 324.6 103.002 209.448V209.448Z"
+          fill="url(#paint0_linear_20_46)"/>
+    <g filter="url(#filter0_d_20_46)">
+        <rect x="24.0267" y="146.948" width="495.947" height="238" rx="8" fill="var(--bg-secondary)"
+              shape-rendering="crispEdges"/>
+        <circle cx="64.0267" cy="186.948" r="24" fill="var(--bg-tertiary)"/>
+        <path d="M74.7592 193.304C74.7592 190.567 69.7304 188.347 63.5267 188.347C57.3231 188.347 52.2943 190.567 52.2943 193.304C52.2943 193.32 52.2954 193.337 52.2959 193.354C52.2959 193.372 52.2943 193.391 52.2943 193.409V195.73C52.2943 197.128 53.4276 198.261 54.8256 198.261H72.2279C73.6259 198.261 74.7592 197.128 74.7592 195.73V193.409C74.7592 193.39 74.7581 193.372 74.7576 193.354C74.7576 193.337 74.7592 193.321 74.7592 193.304Z"
+              fill="var(--ic-secondary)"/>
+        <path d="M63.5267 186.027C66.2499 186.027 68.4574 183.477 68.4574 180.331C68.4574 177.186 66.2499 174.636 63.5267 174.636C60.8036 174.636 58.5961 177.186 58.5961 180.331C58.5961 183.477 60.8036 186.027 63.5267 186.027Z"
+              fill="var(--ic-secondary)"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="99.9738" y="192.967">johndoe@gmail.com</tspan></text>
+        <path d="M494.913 184.05L489.411 189.552C488.825 190.138 488.825 191.087 489.411 191.673C489.997 192.259 490.947 192.259 491.532 191.673L495.974 187.231L500.415 191.673C501.001 192.259 501.951 192.259 502.537 191.673C503.123 191.087 503.123 190.137 502.537 189.552L497.035 184.05C496.449 183.464 495.499 183.464 494.914 184.05L494.913 184.05Z"
+              fill="var(--ic-secondary)"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="230.027" y="247.734">Compromised Data</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="40.0267" y="247.734">Breached Website</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="230.053" y="289.054">Password hash, Phone, Zip, Date of birth, </tspan>
+            <tspan fill="var(--tx-primary)" x="230.053" y="308.054">Company name, state</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="80.0535" y="298.054">Coder.net</tspan></text>
+        <rect x="40.0267" y="276" width="32" height="32" rx="8" fill="var(--gold-700)"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--white)" x="51.0267" y="296.969">C</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="230.053" y="358.054">Password hash, Email</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="80.0535" y="359.054">Dark.io</tspan></text>
+        <rect x="40.0267" y="336.948" width="32" height="32" rx="8" fill="var(--blue-600)"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--white)" x="51.0267" y="358.917">D</tspan></text>
+    </g>
+    <g filter="url(#filter1_d_20_46)">
+        <rect x="24.0267" y="37.1128" width="495.027" height="94" rx="8" fill="var(--bg-secondary)"
+              shape-rendering="crispEdges"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="20" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="445.053" y="80.4487">24</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em" text-decoration="underline"><tspan fill="var(--tx-primary)" x="445.053" y="105.219">Low Risk</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="20" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="368.053" y="80.4487">13</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em" text-decoration="underline"><tspan fill="var(--tx-primary)" x="368.053" y="105.219">High Risk</tspan></text>
+        <circle cx="71.0267" cy="84.1128" r="29" stroke="var(--red-500)" stroke-width="4"/>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="20" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="60.0267" y="91.4487">41</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="20" font-weight="bold"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="110.053" y="79.5615">Data Breaches</tspan></text>
+        <text xml:space="preserve" style="white-space: pre" font-family="Nunito Sans" font-size="14" font-weight="500"
+              letter-spacing="0em"><tspan fill="var(--tx-primary)" x="110.053" y="104.332">of 3487 members and 5 domains</tspan></text>
+    </g>
+    <defs>
+        <filter id="filter0_d_20_46" x="0.0267334" y="126.948" width="543.947" height="286" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                           result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="12"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_46"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_46" result="shape"/>
+        </filter>
+        <filter id="filter1_d_20_46" x="0.0267334" y="17.1128" width="543.027" height="142" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                           result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="12"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_46"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_46" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_20_46" x1="569" y1="209" x2="103" y2="209" gradientUnits="userSpaceOnUse">
+            <stop stop-color="var(--ac-primary-700)"/>
+            <stop offset="1" stop-color="var(--ac-primary-300)"/>
+        </linearGradient>
+    </defs>
+</svg>

@@ -1,0 +1,29 @@
+@import "../../../styles/variables/screens";
+
+.use_cases {
+    background: var(--bg-secondary);
+}
+
+.panel {
+
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+
+    @media only screen and (min-width: $screen-sm) {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+}
+
+.content, .image {
+
+    width: 100%;
+    place-self: center;
+
+    @media only screen and (min-width: $screen-lg) {
+        width: 50%;
+    }
+
+}

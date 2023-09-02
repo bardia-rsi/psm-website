@@ -5,6 +5,7 @@ import { useLoaderData } from "react-router-dom";
 import { AppContext } from "../../context";
 import Hero from "../../containers/Hero";
 import Features from "./Features";
+import UseCases from "./UseCases";
 
 const Home: FC = (): ReactElement => {
 
@@ -17,6 +18,7 @@ const Home: FC = (): ReactElement => {
         <>
             <Hero image={`${imageArr[0]}-${theme}.${imageArr[1]}`} {...restHeroData} />
             <Features />
+            <UseCases />
         </>
     );
 
