@@ -1,0 +1,76 @@
+@import "../../../styles/variables/screens";
+@import "../../../styles/variables/fonts";
+
+.feature {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 3rem;
+
+  @media only screen and (min-width: $screen-md) {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    column-gap: 4rem;
+  }
+
+}
+
+.content, .image {
+
+  width: 100%;
+
+  @media only screen and (min-width: $screen-md) {
+    width: 50%;
+  }
+
+}
+
+.title {
+
+  margin-bottom: 1rem;
+  font-size: $font-2xl;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: $font-4xl;
+  }
+
+}
+
+.image {
+
+  display: flex;
+
+  svg {
+
+    width: 100%;
+    height: auto;
+
+    @media only screen and (min-width: $screen-md) {
+      width: 83.333333%;
+    }
+
+  }
+
+}
+
+.reverse {
+
+  flex-direction: column;
+
+  @media only screen and (min-width: $screen-md) {
+
+    flex-direction: row-reverse;
+
+    .image {
+      justify-content: flex-end;
+    }
+
+  }
+
+}

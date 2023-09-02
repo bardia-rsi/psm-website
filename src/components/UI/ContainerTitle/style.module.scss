@@ -1,0 +1,19 @@
+@import "../../../styles/variables/fonts";
+@import "../../../styles/variables/screens";
+
+.title {
+
+  margin-bottom: 1rem;
+  font-size: $font-3xl;
+  text-transform: capitalize;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: $font-4xl;
+    margin-bottom: 2rem;
+  }
+
+}
+
+.center {
+  text-align: center;
+}
