@@ -38,6 +38,12 @@
   --grey-500: #{$grey-500};
   --grey-600: #{$grey-600};
   --max: #{$black};
+  --twitter: #1A8CD8;
+  --facebook: #2068CB;
+  --reddit: #E63E00;
+  --youtube: #FF0000;
+  --instagram: #BC3081;
+  --linkedin: #095CAF;
 }
 
 [theme="dark"] {
@@ -73,4 +79,10 @@
   --grey-500: #{scale-color($grey-500, $lightness: 5%)};
   --grey-600: #{scale-color($grey-600, $lightness: 5%)};
   --max: #{$white};
+  --twitter: #1D9BF0;
+  --facebook: #2374E1;
+  --reddit: #FF4500;
+  --youtube: #CC0000;
+  --instagram: #C73388;
+  --linkedin: #0A66C2;
 }

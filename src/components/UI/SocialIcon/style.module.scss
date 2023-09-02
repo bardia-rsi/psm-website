@@ -1,0 +1,22 @@
+@import "../../../styles/variables/borders";
+
+.social_icon {
+
+    background: var(--bg-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: $border-rounded-lg;
+
+    svg > * {
+        fill: var(--ic-secondary);
+    }
+
+    &:hover {
+        svg > * {
+            fill: var(--white);
+        }
+    }
+
+}
