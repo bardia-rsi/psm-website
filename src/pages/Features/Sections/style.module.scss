@@ -1,0 +1,41 @@
+@import "../../../styles/variables/screens";
+@import "../../../styles/variables/borders";
+@import "../../../styles/variables/fonts";
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.features {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    column-gap: 2rem;
+
+    @media only screen and (min-width: $screen-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+.image {
+    border-radius: $border-rounded-xl;
+}
+
+.premium {
+    color: var(--gold-500);
+    font-size: $font-sm;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+
+}
+
+.description {
+    color: var(--tx-secondary);
+}
