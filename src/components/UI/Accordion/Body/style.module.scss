@@ -1,0 +1,15 @@
+.body {
+
+    padding: 0 1rem;
+    overflow: hidden;
+    transition-property: padding-top, padding-right, padding-left, padding-bottom;
+
+    &.active {
+        padding: 0.5rem 1rem 1rem;
+    }
+
+}
+
+.content {
+    overflow: hidden;
+}

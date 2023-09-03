@@ -1,0 +1,10 @@
+.item {
+
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-of-type) > div:first-child {
+        border-top: 0.0625rem solid var(--dv-primary);
+    }
+
+}
