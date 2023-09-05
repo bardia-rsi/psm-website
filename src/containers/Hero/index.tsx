@@ -7,8 +7,8 @@ import Wrapper from "../../components/UI/Wrapper";
 import Link from "../../components/UI/Link";
 import Style from "./style.module.scss";
 
-const Hero: FC<Props> = ({ title, description, links, image, center }): ReactElement => (
-    <Container className={Style.hero}>
+const Hero: FC<Props> = ({ background = "primary", title, description, links, image, center }): ReactElement => (
+    <Container className={Style[background]}>
         <Wrapper className={cn(Style.hero_wrapper, center && Style.center)}>
             <div className={Style.content}>
                 <h1 className={Style.title}>{ title }</h1>

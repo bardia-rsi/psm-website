@@ -1,10 +1,6 @@
 @import "../../styles/variables/fonts";
 @import "../../styles/variables/screens";
 
-.hero {
-  background: var(--ac-primary-500);
-}
-
 .hero_wrapper {
 
   display: flex;
@@ -50,7 +46,6 @@
 
 .title, .description {
 
-  color: var(--white);
   text-align: center;
 
   @media only screen and (min-width: $screen-lg) {
@@ -104,6 +99,40 @@
       text-align: center;
     }
 
+  }
+
+}
+
+.primary {
+
+  background: var(--ac-primary-500);
+
+  .title, .description {
+    color: var(--white);
+  }
+
+}
+
+.secondary {
+
+  background: var(--ac-secondary-500);
+
+  .title, .description {
+    color: var(--white);
+  }
+
+}
+
+.transparent {
+
+  background: transparent;
+
+  .title {
+    color: var(--tx-primary);
+  }
+
+  .description {
+    color: var(--tx-secondary);
   }
 
 }
