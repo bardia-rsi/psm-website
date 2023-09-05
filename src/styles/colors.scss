@@ -26,6 +26,7 @@
   --ic-primary: #{$black};
   --ic-secondary: #{scale-color($black, $lightness: 40%)};
   --dv-primary: #{scale-color($white, $lightness: -25%)};
+  --dv-secondary: #{scale-color($white, $lightness: -10%)};
   --red-500: #{$red-500};
   --blue-200: #{$blue-200};
   --blue-500: #{$blue-500};
@@ -78,6 +79,7 @@
   --ic-primary: #{$white};
   --ic-secondary: #{scale-color($white, $lightness: -40%)};
   --dv-primary: #{scale-color($black, $lightness: 25%)};
+  --dv-secondary: #{scale-color($black, $lightness: 10%)};
   --red-500: #{scale-color($red-500, $lightness: 5%)};
   --blue-200: #{scale-color($blue-200, $lightness: 5%)};
   --blue-500: #{scale-color($blue-500, $lightness: 5%)};

@@ -1,0 +1,75 @@
+@import "../../../styles/variables/screens";
+@import "../../../styles/variables/fonts";
+
+.image {
+    width: 66%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.pillars {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media only screen and (min-width: $screen-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.item {
+
+    padding: 2rem 3rem;
+
+    &:not(:first-of-type) {
+
+        border-top: 0.0625rem solid var(--dv-secondary);
+
+        @media only screen and (min-width: $screen-md) {
+            border-top: none;
+        }
+
+    }
+
+    @media only screen and (min-width: $screen-md) {
+
+        &:nth-of-type(odd) {
+            border-right: 0.0625rem solid var(--dv-secondary);
+        }
+
+        &:nth-of-type(even) {
+            border-left: 0.0625rem solid var(--dv-secondary);
+        }
+
+        &:nth-of-type(1), &:nth-of-type(2) {
+            border-bottom: 0.0625rem solid var(--dv-secondary);
+        }
+
+        &:nth-of-type(3), &:nth-of-type(4) {
+            border-top: 0.0625rem solid var(--dv-secondary);
+        }
+
+    }
+
+}
+
+.icon {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+
+    & > * {
+        fill: var(--ic-primary);
+    }
+
+}
+
+.title {
+    font-size: $font-3xl;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
