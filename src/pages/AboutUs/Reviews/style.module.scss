@@ -1,0 +1,68 @@
+@import "../../../styles/variables/screens";
+@import "../../../styles/variables/borders";
+@import "../../../styles/variables/fonts";
+
+.items {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: stretch;
+    align-items: center;
+
+    @media only screen and (min-width: $screen-md) {
+        flex-direction: row;
+        column-gap: 2rem;
+        align-items: stretch;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+        column-gap: 3rem;
+    }
+
+}
+
+.item {
+    background: var(--bg-secondary);
+    border-radius: $border-rounded-lg;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.header, .body {
+    padding: 1rem;
+}
+
+.content {
+    flex: 1 1 0;
+}
+
+.username {
+    font-size: $font-base;
+    font-weight: 600;
+}
+
+.date {
+    color: var(--tx-secondary);
+    font-size: $font-sm;
+}
+
+.logo {
+
+    width: 2rem;
+    height: 2rem;
+
+    & > * {
+        fill: var(--ic-primary);
+    }
+}
+
+.title {
+    font-size: $font-lg;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}

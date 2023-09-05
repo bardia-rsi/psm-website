@@ -3,6 +3,7 @@ import type { AboutUsPageResources } from "../../types/Data/Pages/AboutUs";
 import { useLoaderData } from "react-router-dom";
 import Hero from "../../containers/Hero";
 import Pillars from "./Pillars";
+import Reviews from "./Reviews";
 
 const AboutUs: FC = (): ReactElement => {
 
@@ -12,6 +13,7 @@ const AboutUs: FC = (): ReactElement => {
         <>
             <Hero {...hero}  />
             <Pillars />
+            <Reviews />
         </>
     );
 }
