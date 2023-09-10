@@ -3,7 +3,7 @@ import type { Types, Variants } from "../../../types/Elements/Button";
 import cn from "classnames";
 import Style from "./style.module.scss";
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     appearance: Types | "custom";
     variant?: Variants;
     children: ReactNode;

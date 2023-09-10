@@ -2,6 +2,7 @@ import type { FC, ReactElement } from "react";
 import type { ContactUsPageResources } from "../../types/Data/Pages/ContactUs";
 import { useLoaderData } from "react-router-dom";
 import Hero from "../../containers/Hero";
+import ContactUsForm from "./Form";
 
 const ContactUs: FC = (): ReactElement => {
 
@@ -10,6 +11,7 @@ const ContactUs: FC = (): ReactElement => {
     return (
         <>
             <Hero {...hero} />
+            <ContactUsForm />
         </>
     );
 

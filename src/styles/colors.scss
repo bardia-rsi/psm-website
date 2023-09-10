@@ -46,6 +46,7 @@
   --amber-200: #{$amber-200};
   --amber-400: #{$amber-400};
   --yellow-200: #{$yellow-200};
+  --orange-600: #{$orange-600};
   --orange-700: #{$orange-700};
   --pink-500: #{$pink-500};
   --max: #{$black};
@@ -99,6 +100,7 @@
   --amber-200: #{scale-color($amber-200, $lightness: 2%)};
   --amber-400: #{scale-color($amber-400, $lightness: 2%)};
   --yellow-200: #{scale-color($yellow-200, $lightness: 2%)};
+  --orange-600: #{scale-color($orange-600, $lightness: 5%)};
   --orange-700: #{scale-color($orange-700, $lightness: 2%)};
   --pink-500: #{scale-color($pink-500, $lightness: 2%)};
   --max: #{$white};

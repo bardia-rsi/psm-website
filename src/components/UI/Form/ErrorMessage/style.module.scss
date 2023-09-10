@@ -1,0 +1,8 @@
+@import "../../../../styles/variables/fonts";
+
+.error_message {
+  display: block;
+  color: var(--red-500);
+  font-size: $font-xs;
+  font-weight: 700;
+}

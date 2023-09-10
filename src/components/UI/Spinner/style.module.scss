@@ -1,0 +1,40 @@
+$size: 40;
+
+.spinner {
+
+  width: $size * 2 + px;
+  height: $size * 2 + px;
+
+  circle {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 3.14 * $size;
+    transform-origin: center;
+    animation: spinner 3.75s linear infinite;
+  }
+
+}
+
+@keyframes spinner {
+  0% {
+    stroke-dashoffset: (0.66 * $size);
+    transform: rotate(0deg);
+  }
+  50% {
+    stroke-dashoffset: (3.14 * $size);
+    transform: rotate(720deg);
+  }
+  100% {
+    stroke-dashoffset: (0.66 * $size);
+    transform: rotate(1080deg);
+  }
+}
+
+.primary circle {
+  stroke: var(--ac-primary-500);
+}
+
+.secondary circle {
+  stroke: var(--ac-secondary-500);
+}

@@ -1,0 +1,25 @@
+@import "../../../styles/variables/screens";
+
+.radio {
+
+  display: none;
+
+  @media only screen and (min-width: $screen-md) {
+    display: flex;
+  }
+
+}
+
+.select {
+
+  display: flex;
+
+  @media only screen and (min-width: $screen-md) {
+    display: none;
+  }
+
+}
+
+.toast {
+  top: 3.25rem;
+}

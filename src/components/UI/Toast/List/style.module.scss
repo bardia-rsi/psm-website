@@ -1,0 +1,41 @@
+.list {
+  position: fixed;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: stretch;
+}
+
+.top {
+
+  &_left, &_center, &_right {
+    top: 2rem;
+  }
+
+}
+
+.bottom {
+
+  &_left, &_center, &_right {
+    bottom: 2rem;
+  }
+
+}
+
+.top, .bottom {
+
+  &_left {
+    left: 2rem;
+  }
+
+  &_center {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &_right {
+    right: 2rem;
+  }
+
+}

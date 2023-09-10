@@ -1,0 +1,10 @@
+.loading_button svg {
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  & > * {
+    fill: none !important;
+  }
+
+}

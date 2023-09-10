@@ -1,0 +1,41 @@
+@import "../../../../styles/variables/fonts";
+
+.group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.container {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 0;
+
+  &.reverse {
+    flex-direction: row-reverse;
+    column-gap: 0.5rem;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+  }
+
+}
+
+.label {
+  color: var(--tx-primary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.select {
+  border: 0.125rem solid transparent;
+}

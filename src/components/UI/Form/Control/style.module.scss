@@ -1,0 +1,92 @@
+@import "../../../../styles/variables/fonts";
+
+.label {
+  text-transform: capitalize;
+}
+
+.control {
+
+  position: relative;
+
+  .label {
+
+    position: absolute;
+    left: 1.625rem;
+    right: 1.625rem;
+    transform: translate(0, -50%);
+    transition-property: all;
+    cursor: text;
+
+    &.error {
+      color: var(--red-500);
+    }
+
+  }
+
+  input + .label {
+    top: 50%;
+  }
+
+  textarea + .label {
+    background: var(--bg-tertiary);
+    top: 2rem;
+  }
+
+  // Focus mode or filled field
+  input:is(:focus, :not([value=""])) + .label {
+    top: 26%;
+  }
+
+  textarea:is(:focus, :not(:empty)) + .label {
+    padding-top: 0.815rem;
+    top: 1rem;
+  }
+
+  input:is(:focus, :not([value=""])), textarea:is(:focus, :not(:empty)) {
+
+    & + .label {
+      font-size: $font-xs;
+    }
+
+    & + .label:not(.error) {
+      color: var(--tx-secondary);
+    }
+
+  }
+
+  textarea:is(:focus, :hover) {
+
+    & + .label {
+      background: var(--bg-fourth);
+    }
+
+    &:not(:empty) + .label {
+      background: var(--bg-fourth);
+    }
+
+  }
+
+  textarea:is(:focus, :hover) + .label, textarea:is(:focus, :hover):not(:empty) + .label {
+    background: var(--bg-fourth);
+  }
+
+  textarea:not(:empty) + .label {
+    background: var(--bg-tertiary);
+  }
+
+}
+
+.checkbox_control, .radio_button_control {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.radio_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio_button_control .label {
+  cursor: pointer;
+}
