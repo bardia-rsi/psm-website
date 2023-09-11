@@ -13,6 +13,7 @@ import Pricing from "./pages/Pricing";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 import { createLoader } from "./utils/loader";
 
 const router = createBrowserRouter([
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
                     { path: "/contact-us", element: <ContactUs />, loader: createLoader<ContactUsPageResources>("pages/contact-us") }
                 ]
             },
-            { path: "/sign-up", element: <SignUp /> }
+            { path: "/sign-up", element: <SignUp /> },
+            { path: "/login", element: <Login /> }
         ]
     }
 ]);
