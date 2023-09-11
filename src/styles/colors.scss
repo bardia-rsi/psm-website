@@ -20,6 +20,7 @@
   --bg-tertiary: #{scale-color($white, $lightness: -12%)};
   --bg-fourth: #{scale-color($white, $lightness: -15%)};
   --bg-fifth: #{scale-color($white, $lightness: -18%)};
+  --bg-max: #{$white};
   --tx-primary: #{$black};
   --tx-secondary: #{scale-color($black, $lightness: 10%)};
   --tx-tertiary: #{scale-color($black, $lightness: 20%)};
@@ -48,9 +49,9 @@
   --yellow-200: #{$yellow-200};
   --orange-600: #{$orange-600};
   --orange-700: #{$orange-700};
+  --deep-orange-500: #{$deep-orange-500};
   --pink-500: #{$pink-500};
   --max: #{$black};
-  --bg-max: #{$white};
   --twitter: #1A8CD8;
   --facebook: #2068CB;
   --reddit: #E63E00;
@@ -74,6 +75,7 @@
   --bg-tertiary: #{scale-color($black, $lightness: 12%)};
   --bg-fourth: #{scale-color($black, $lightness: 15%)};
   --bg-fifth: #{scale-color($black, $lightness: 18%)};
+  --bg-max: #{$black};
   --tx-primary: #{$white};
   --tx-secondary: #{scale-color($white, $lightness: -15%)};
   --tx-tertiary: #{scale-color($white, $lightness: -30%)};
@@ -102,9 +104,9 @@
   --yellow-200: #{scale-color($yellow-200, $lightness: 2%)};
   --orange-600: #{scale-color($orange-600, $lightness: 5%)};
   --orange-700: #{scale-color($orange-700, $lightness: 2%)};
+  --deep-orange-500: #{scale-color($deep-orange-500, $lightness: 5%)};
   --pink-500: #{scale-color($pink-500, $lightness: 2%)};
   --max: #{$white};
-  --bg-max: #{$black};
   --twitter: #1D9BF0;
   --facebook: #2374E1;
   --reddit: #FF4500;

@@ -1,0 +1,94 @@
+@import "../../../styles/variables/borders";
+@import "../../../styles/variables/fonts";
+@import "../../../styles/variables/shadows";
+
+.tooltip_wrapper {
+  position: relative;
+}
+
+.tooltip {
+
+  background: var(--bg-max);
+  color: var(--tx-primary);
+  position: absolute;
+  padding: 0.5rem 0.75rem;
+  z-index: 5;
+  border-radius: $border-rounded-md;
+  font-size: $font-sm;
+  font-weight: 600;
+  box-shadow: $shadow-lg;
+
+  &:before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--bg-max);
+    position: absolute;
+    border-radius: $border-rounded-sm;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: $shadow-lg;
+  }
+
+}
+
+.top, .bottom {
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &:before {
+    left: 50%;
+  }
+
+}
+
+.top {
+
+  bottom: 115%;
+
+  &:before {
+    top: 100%;
+  }
+
+}
+
+.bottom {
+
+  top: 110%;
+
+  &:before {
+    bottom: 100%;
+  }
+
+}
+
+.left, .right {
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &:before {
+    top: 50%;
+  }
+
+}
+
+.left {
+
+  right: 110%;
+
+  &:before {
+    left: 100%;
+  }
+
+}
+
+.right {
+
+  left: 110%;
+
+  &:before {
+    right: 100%;
+  }
+
+}

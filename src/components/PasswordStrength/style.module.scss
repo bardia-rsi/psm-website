@@ -1,0 +1,100 @@
+@import "../../styles/variables/borders";
+@import "../../styles/variables/fonts";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.complexity_level_wrapper {
+  flex: 1 1 0;
+  background: var(--bg-tertiary);
+}
+
+.complexity_level_wrapper, .complexity_level {
+  height: 0.375rem;
+  border-radius: $border-rounded-md;
+}
+
+.complexity_level {
+  transition-property: width, background-color;
+}
+
+.complexity_level_text {
+  font-size: $font-xs;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.very_weak {
+
+  .complexity_level {
+    background: var(--red-500);
+  }
+
+  .complexity_level_text {
+    color: var(--red-500);
+  }
+
+}
+
+.weak {
+
+  .complexity_level {
+    background: var(--deep-orange-500);
+  }
+
+  .complexity_level_text {
+    color: var(--deep-orange-500);
+  }
+
+}
+
+.moderate {
+
+  .complexity_level {
+    background: var(--orange-600);
+  }
+
+  .complexity_level_text {
+    color: var(--orange-600);
+  }
+
+}
+
+.good {
+
+  .complexity_level {
+    background: var(--green-500);
+  }
+
+  .complexity_level_text {
+    color: var(--green-500);
+  }
+
+}
+
+.strong {
+
+  .complexity_level {
+    background: var(--green-800);
+  }
+
+  .complexity_level_text {
+    color: var(--green-800);
+  }
+
+}
+
+.unknown {
+
+  .complexity_level {
+    background: transparent;
+  }
+
+  .complexity_level_text {
+    color: transparent;
+  }
+
+}
