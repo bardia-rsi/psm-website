@@ -1,0 +1,68 @@
+@import "../../styles/variables/fonts";
+@import "../../styles/variables/screens";
+
+.error_container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.error_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  max-width: 30rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.title, .description {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.title {
+
+  font-size: $font-4xl;
+  margin-bottom: 0.25rem;
+
+  @media only screen and (min-width: $screen-sm) {
+    font-size: $font-5xl;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: $font-6xl;
+  }
+
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.refresh_btn {
+
+  .refresh {
+    transition-duration: 0.5s;
+    transition-property: all;
+    transform-origin: center center;
+  }
+
+  &:hover .refresh {
+    transform: rotate(360deg);
+  }
+
+}

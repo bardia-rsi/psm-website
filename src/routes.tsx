@@ -16,6 +16,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import Error from "./pages/Error";
 import { createLoader } from "./utils/loader";
 
 const router = createBrowserRouter([
@@ -73,7 +74,8 @@ const router = createBrowserRouter([
                 ]
             },
             { path: "*", element: <NotFound /> }
-        ]
+        ],
+        errorElement: <Error />
     }
 ]);
 
