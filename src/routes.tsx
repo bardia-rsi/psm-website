@@ -15,6 +15,7 @@ import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import ComingSoon from "./pages/ComingSoon";
+import NotFound from "./pages/NotFound";
 import { createLoader } from "./utils/loader";
 
 const router = createBrowserRouter([
@@ -70,7 +71,8 @@ const router = createBrowserRouter([
                     { path: "/privacy-policy" },
                     { path: "/forgot-password" }
                 ]
-            }
+            },
+            { path: "*", element: <NotFound /> }
         ]
     }
 ]);
