@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 path: "/",
                 id: "layout",
                 element: <Layout />,
-                loader: createLoader<WebsiteSettings>("website-settings"),
+                loader: createLoader<WebsiteSettings>("settings"),
                 children: [
                     { path: "/", id: "home", element: <Home />, loader: createLoader<HomePageResources>("pages/home") },
                     { path: "/features", id: "features", element: <Features />, loader: createLoader<FeaturesPageResources>("pages/features") },

@@ -3,7 +3,7 @@ import axios from "axios";
 export const createLoader = <T>(url: string) => async (): Promise<T> => {
     try {
 
-        return (await axios.get<T>(`http://api.localhost:8000/www/${url}`)).data;
+        return (await axios.get<T>(`http://api.localhost:8000/www/website/${url}`)).data;
 
     } catch (e: any) {
 
