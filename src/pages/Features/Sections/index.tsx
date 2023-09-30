@@ -15,8 +15,8 @@ const Sections: FC = (): ReactElement => {
     return (
         <>
             {
-                data.map(({ title, cards }) => (
-                    <Container>
+                data.map(({ id, title, cards }) => (
+                    <Container key={id}>
                         <Wrapper>
                             <ContainerTitle center={title.center}>{ title.text }</ContainerTitle>
                             <div className={Style.features}>

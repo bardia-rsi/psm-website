@@ -7,6 +7,7 @@ import { QuestionItem } from "../QuestionItem";
 export interface FeaturesPageResources {
     hero: Hero;
     sections: {
+        id: number;
         title: Title;
         cards: {
             id: number;
