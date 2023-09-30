@@ -21,9 +21,8 @@ const CTA: FC<Props> = ({ title, subtitle, links, features }): ReactElement => (
                 <div className={Style.buttons}>
                     {
                         links.map(({ id, link, subtext }) => (
-                            <div>
-                                <Link key={id}
-                                      to={link.url}
+                            <div key={id}>
+                                <Link to={link.url}
                                       type={link.type}
                                       variant={link.variant}
                                       className={Style.btn_wide}>
