@@ -23,7 +23,7 @@ const SignUpForm: FC = (): ReactElement => {
 
     const { addToast } = useToast();
 
-    const [cookies, setCookies] = useCookies(["psm_user_data", "psm_refresh_token", "psm_access_token"]);
+    const [cookies, setCookies] = useCookies(["psm_refresh_token", "psm_access_token"]);
 
     const submitHandler = async (values: SignUpFormFields, formikHelpers: FormikHelpers<SignUpFormFields>): Promise<void> => {
         try {
@@ -54,11 +54,6 @@ const SignUpForm: FC = (): ReactElement => {
                 res.data.refreshToken,
                 { domain: `.${process.env.REACT_APP_WEBSITE_DOMAIN}`, maxAge: 259200 }
             );
-            setCookies(
-                "psm_user_data",
-                omit(res.data, "accessToken", "refreshToken"),
-                { domain: `.${process.env.REACT_APP_WEBSITE_DOMAIN}`, maxAge: 259200 }
-            );
 
             window.location.href = process.env.REACT_APP_DASHBOARD_URL;
 
@@ -81,7 +76,7 @@ const SignUpForm: FC = (): ReactElement => {
         }
     }
 
-    if (cookies.psm_user_data || cookies.psm_refresh_token || cookies.psm_access_token) {
+    if (cookies.psm_refresh_token || cookies.psm_access_token) {
         window.location.href = process.env.REACT_APP_DASHBOARD_URL;
     }
 
