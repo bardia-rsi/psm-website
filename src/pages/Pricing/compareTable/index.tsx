@@ -40,7 +40,7 @@ const CompareTable: FC = (): ReactElement => {
 
                                             if (link) {
                                                 return (
-                                                    <td className={Style.td}>
+                                                    <td key={id} className={Style.td}>
                                                         <div className={Style.button_container}>
                                                             <Link to={link.link.url}
                                                                   type={link.link.type}
@@ -57,7 +57,11 @@ const CompareTable: FC = (): ReactElement => {
 
                                             if (text) {
                                                 return (
-                                                    <td className={cn(Style.td, index === 0 ? Style.label : Style.text)}>
+                                                    <td key={id}
+                                                        className={cn(
+                                                            Style.td,
+                                                            index === 0 ? Style.label : Style.text
+                                                        )}>
                                                         { text }
                                                     </td>
                                                 );
@@ -65,7 +69,7 @@ const CompareTable: FC = (): ReactElement => {
 
                                             if (feature !== undefined) {
                                                 return (
-                                                    <td className={Style.td}>
+                                                    <td key={id} className={Style.td}>
                                                         <SVG src={`icons/${feature ? "checkmark" : "close"}.svg`}
                                                              className={cn(
                                                                  Style.icon,
