@@ -28,7 +28,7 @@ const SignUpForm: FC = (): ReactElement => {
     const submitHandler = async (values: SignUpFormFields, formikHelpers: FormikHelpers<SignUpFormFields>): Promise<void> => {
         try {
 
-            const res = await axios.post("http://auth.localhost:8000/sign-up", {
+            const res = await axios.post(`${process.env.REACT_APP_API_AUTH_URL}/sign-up`, {
                 login: {
                     ...omit(values, "password", "confirmationPassword"),
                     password: {
@@ -44,11 +44,23 @@ const SignUpForm: FC = (): ReactElement => {
 
             formikHelpers.setSubmitting(false);
 
-            setCookies("psm_access_token", res.data.accessToken, { domain: "localhost", maxAge: 3600 });
-            setCookies("psm_refresh_token", res.data.refreshToken, { domain: "localhost", maxAge: 259200 });
-            setCookies("psm_user_data", omit(res.data, "accessToken", "refreshToken"), { domain: "localhost", maxAge: 259200 });
+            setCookies(
+                "psm_access_token",
+                res.data.accessToken,
+                { domain: `.${process.env.REACT_APP_WEBSITE_DOMAIN}`, maxAge: 3600 }
+            );
+            setCookies(
+                "psm_refresh_token",
+                res.data.refreshToken,
+                { domain: `.${process.env.REACT_APP_WEBSITE_DOMAIN}`, maxAge: 259200 }
+            );
+            setCookies(
+                "psm_user_data",
+                omit(res.data, "accessToken", "refreshToken"),
+                { domain: `.${process.env.REACT_APP_WEBSITE_DOMAIN}`, maxAge: 259200 }
+            );
 
-            window.location.href = "http://panel.localhost:3000";
+            window.location.href = process.env.REACT_APP_DASHBOARD_URL;
 
         } catch (e: any) {
 
@@ -70,7 +82,7 @@ const SignUpForm: FC = (): ReactElement => {
     }
 
     if (cookies.psm_user_data || cookies.psm_refresh_token || cookies.psm_access_token) {
-        window.location.href = "http://dashboard.localhost:3000";
+        window.location.href = process.env.REACT_APP_DASHBOARD_URL;
     }
 
     return (
