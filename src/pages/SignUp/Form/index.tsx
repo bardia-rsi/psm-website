@@ -77,7 +77,9 @@ const SignUpForm: FC = (): ReactElement => {
         <Container className={Style.form_container}>
             <Wrapper className={Style.form_wrapper}>
                 <div className={Style.form}>
-                    <Logo src="/logo-typography.svg" className={Style.center_logo} />
+                    <div className={Style.center_logo}>
+                        <Logo src="/logo-typography.svg" />
+                    </div>
                     <ContainerTitle className={Style.form_title}>create an account</ContainerTitle>
                     <p className={Style.subtitle}>
                         Already have an account?
