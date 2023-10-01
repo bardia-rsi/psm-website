@@ -24,6 +24,8 @@ const LoginForm: FC = (): ReactElement => {
     const submitHandler = async (values: LoginFormFields, formikHelpers: FormikHelpers<LoginFormFields>): Promise<void> => {
         try {
 
+            formikHelpers.setSubmitting(true);
+
             const res = await axios.post(`${process.env.REACT_APP_API_AUTH_URL}/login`, {
                 username: values.emailOrUsername.includes("@") ? undefined : values.emailOrUsername,
                 email: values.emailOrUsername.includes("@") ? values.emailOrUsername : undefined,
@@ -31,8 +33,6 @@ const LoginForm: FC = (): ReactElement => {
             });
 
             addToast({ content: "Logged in successfully", type: "success" });
-
-            formikHelpers.setSubmitting(false);
 
             setCookies(
                 "psm_access_token",

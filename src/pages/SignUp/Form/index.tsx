@@ -28,6 +28,8 @@ const SignUpForm: FC = (): ReactElement => {
     const submitHandler = async (values: SignUpFormFields, formikHelpers: FormikHelpers<SignUpFormFields>): Promise<void> => {
         try {
 
+            formikHelpers.setSubmitting(true);
+
             const res = await axios.post(`${process.env.REACT_APP_API_AUTH_URL}/sign-up`, {
                 login: {
                     ...omit(values, "password", "confirmationPassword"),
@@ -41,8 +43,6 @@ const SignUpForm: FC = (): ReactElement => {
             });
 
             addToast({ content: "Account created successfully", type: "success" });
-
-            formikHelpers.setSubmitting(false);
 
             setCookies(
                 "psm_access_token",
