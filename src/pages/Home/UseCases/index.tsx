@@ -35,7 +35,7 @@ const UseCases: FC = (): ReactElement => {
                                                     <p>{ description }</p>
                                                 </div>
                                                 <div className={Style.image}>
-                                                    <SVG src={image} width="100%" height="auto" />
+                                                    <SVG src={image} width="100%" />
                                                 </div>
                                             </div>
                                         </TabPanel>

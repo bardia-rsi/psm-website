@@ -28,7 +28,7 @@ const Hero: FC<Props> = ({ background = "primary", title, description, links, im
                     {
                         image.endsWith(".png")
                             ? <img src={image} alt="Product images on different divces" />
-                            : <SVG src={image} width="100%" height="auto" />
+                            : <SVG src={image} width="100%" />
                     }
                 </div>
             ) }
