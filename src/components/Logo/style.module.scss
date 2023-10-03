@@ -1,7 +1,10 @@
+.link {
+  display: inline-flex;
+}
+
 .logo {
 
-  width: 92px;
-  height: auto;
+  width: 5.75rem;
 
   & > * {
     fill: var(--max);

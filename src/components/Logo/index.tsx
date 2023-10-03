@@ -9,9 +9,9 @@ interface Props extends Omit<LinkProps, "to"> {
 }
 
 const Logo: FC<Props> = ({ src, ...rest }): ReactElement => (
-  <Link to="/" {...rest}>
-      <SVG src={src} className={Style.logo} />
-  </Link>
+    <Link to="/" {...rest} className={Style.link}>
+        <SVG src={src} className={Style.logo} />
+    </Link>
 );
 
 export default Logo;
