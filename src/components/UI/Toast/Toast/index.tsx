@@ -44,7 +44,7 @@ const Toast: FC<Props> = ({ id, content, type, autoRemove = true, duration = 300
                                 variant="gray"
                                 className={Style.close_btn}
                                 onClick={() => setIsRemoved(true)}>
-                            <SVG src="/icons/close.svg" />
+                            <SVG src="/icons/xmark.svg" />
                         </Button>
                     ) }
                 </motion.div>
