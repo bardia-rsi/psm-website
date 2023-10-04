@@ -38,7 +38,11 @@ const Toast: FC<Props> = ({ id, content, type, autoRemove = true, duration = 300
                             exit={{ translateY: -40, opacity: 0 }}
                             transition={{ duration: 0.5 }}
                             className={cn(Style.toast_item, Style[type], className)}>
-                    <p className={Style.content}>{ content }</p>
+                    {
+                        typeof content === "string"
+                            ? <p className={Style.content}>{ content }</p>
+                            : content
+                    }
                     { !autoRemove && (
                         <Button appearance="icon"
                                 variant="gray"

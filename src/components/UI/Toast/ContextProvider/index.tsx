@@ -1,4 +1,4 @@
-import type { ReactNode, FC, ReactElement, Context } from "react";
+import type { ReactElement, ReactNode, FC, Context } from "react";
 import { createContext, useCallback, useState } from "react";
 import { nanoid } from "nanoid";
 import List from "../List";
@@ -11,7 +11,7 @@ export type ContainerPosition = "top-left" | "top-center" | "top-right" | "botto
 export interface Toast {
     id: ToastId;
     type: "success" | "danger" | "warning" | "info";
-    content: string;
+    content: string | ReactElement;
     autoRemove?: boolean;
     duration?: number;
     className?: string;
