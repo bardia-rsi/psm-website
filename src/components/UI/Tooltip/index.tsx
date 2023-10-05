@@ -1,7 +1,8 @@
 import type { ReactNode, ReactElement, FC } from "react";
-import { cloneElement, useState } from "react";
+import { cloneElement, useState, useRef } from "react";
 import cn from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
+import useOnclickOutside from "../../../hooks/useOnclickOutside";
 import Style from "./style.module.scss";
 
 interface Props {
@@ -15,9 +16,12 @@ interface Props {
 const Tooltip: FC<Props> = ({ content, position = "top", className, wrapperClassName, children }): ReactElement => {
 
     const [show, setShow] = useState<boolean>(false);
+    const tooltipEl = useRef(null);
+
+    useOnclickOutside(tooltipEl, () => setShow(false), show);
 
     return (
-        <div className={cn(Style.tooltip_wrapper, wrapperClassName)}>
+        <div className={cn(Style.tooltip_wrapper, wrapperClassName)} ref={tooltipEl}>
             <AnimatePresence>
                 {
                     show && (
@@ -33,12 +37,12 @@ const Tooltip: FC<Props> = ({ content, position = "top", className, wrapperClass
             </AnimatePresence>
             {
                 cloneElement(children, {
-                    onMouseOver: () => {
+                    onMouseEnter: () => {
 
                         setShow(true);
 
-                        if (children.props.onMouseOver) {
-                            children.props.onMouseOver();
+                        if (children.props.onMouseEnter) {
+                            children.props.onMouseEnter();
                         }
 
                     },
